@@ -1,0 +1,5 @@
+import requests
+import lxml.html
+
+response = requests.get("https://www.reddit.com/r/news/")
+html = lxml.html.fromstring(response.text)
